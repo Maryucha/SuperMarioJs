@@ -2,6 +2,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background: linear-gradient(#87ceed, #e0f6ff);
+}
+
 @font-face {
     font-family: 'Super-Mario-World';
     src: url('Super-Mario-World.ttf') format('truetype');
@@ -16,7 +21,6 @@
     margin: 35px 35px;
     -webkit-text-stroke: 1.7px black;
 }
-
 
 .game-board {
     margin:0;

@@ -1,6 +1,7 @@
 
 const pipe = document.querySelector('.pipe');
 const mario = document.querySelector('.mario');
+const nuvens = document.querySelector('.nuvens');
 
 const jump = () => {
     mario.classList.add('jump');
@@ -26,6 +27,8 @@ const loop = setInterval(() => {
         mario.style.width='75px';
         mario.style.marginLeft='50px';
         mario.style.bottom='100px';
+
+        nuvens.style.animation = 'none';
     }
 }, 10);
 
