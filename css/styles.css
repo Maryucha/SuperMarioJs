@@ -1,27 +1,34 @@
 * {
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(65, 218, 238);
 }
+@font-face {
+    font-family: 'Super-Mario-World';
+    src: url('Super-Mario-World.ttf') format('truetype');
+  }
 
 .text {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Super-Mario-World', sans-serif;
     font-weight: 700;
-    color: white;
-    font-size: 36px;
+    color: rgb(253, 236, 0);
+    font-size: 50px;
     text-align: center;
     margin: 35px 35px;
+    -webkit-text-stroke: 1.7px black;
 }
+
 
 .game-board {
     margin:0;
     width: 80%;
     height: 500px;
     border: 1px solid #333;
+    background: linear-gradient(#87ceed, #e0f6ff);
     margin: 0 auto;
     position: relative;
     /*aqui o que estiver fora da div some*/
     overflow: hidden;
+    border-bottom: 30px solid rgb(35,160,35);
 }
 
 .pipe {
@@ -42,9 +49,10 @@
 }
 
 .nuvens {
+    position: absolute;
     margin-top: 30px;
     width: 200px;
-    animation: nuvens-animation 1.5s infinite linear;
+    animation: nuvens-animation 10s infinite linear;
 }
 
 /*aqui começa a animação cano*/
@@ -60,7 +68,7 @@
  /*animação nuvens*/
 @keyframes nuvens-animation {
     from {
-        right: -80px;
+        right: -150px;
     }
     to {
         right: 100%;
